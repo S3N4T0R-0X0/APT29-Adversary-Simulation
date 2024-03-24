@@ -1,0 +1,5 @@
+pyautogui==0.9.53
+pyvirtualdisplay==2.2
+requests==2.26.0
+pycryptodome==3.11.0
+
