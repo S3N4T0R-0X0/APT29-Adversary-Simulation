@@ -64,7 +64,10 @@ Note: This iso file is the one to which we will make base64 for this iso file an
 Because i put the command line in the setup (run after extraction) menu in the Advanced SFX options for the WinRaR program now when the victim open the ISO file to see the high-quality images for the BMW car according to the phishing message he had previously received he will execute the payload with opening the actual image of the BMW car
 
 
-https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/effcdebb-c8d2-4609-b250-639a39fd3189
+
+https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/343e37ce-28e0-4a52-8a68-673bfcc68ffe
+
+
 
 ## The fourth stage (Data Exfiltration) over Dropbox API C2 Channe
 
@@ -77,7 +80,6 @@ First, we need to create a Dropbox account and activate its permissions, as show
 After that, we will go to the settings menu to generate the access token for the Dropbox account, and this is what we will use in Dropbox C2.
 
 ![photo_2024-03-12_16-22-54](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/00e41c7e-b2ac-4805-b1a9-77d00671ebf8)
-
 
 
 This script integrates Dropbox API functionality to facilitate communication between the compromised system and the attacker-controlled server,
@@ -110,5 +112,5 @@ this payload uses the Dropbox API to upload data, including command output to Dr
 
 ## Final result: payload connect to Dropbox C2 server
 
-https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/43b900b9-b96e-417a-91cd-284e4ccbd7e6
+https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/c5b7b826-72a1-459e-9f19-6e34bd79aeab
 
