@@ -6,9 +6,9 @@ I relied on palo alto to figure out the details to make this simulation: https:/
 
 ![GIF_20240228_033834_929](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/6eca3483-961f-40b9-bd59-e2ab5d56f732)
 
-1.DOCX file: created DOCX file includes a Hyperlink that leads to downloading further HTML (HTML smuggling file)
+1.DOCX file: created DOCX file includes a Hyperlink that leads to downloading further HTML (HTML smuggling file).
 
-2.HTML Smuggling: The attackcers  use the of HTML smuggling to obscure the ISO file
+2.HTML Smuggling: The attackcers  use the of HTML smuggling to obscure the ISO file.
 
 3.LNK files: When the LNK files (shortcut) are executed they run a legitimate EXE and open a PNG file. However, behind the scenes, encrypted shellcode is read into memory and decrypted.
 
@@ -29,7 +29,7 @@ I relied on palo alto to figure out the details to make this simulation: https:/
 ## The first stage (delivery technique)
 
 First the attackers created DOCX file includes a Hyperlink that leads to downloading further HTML (HTML smuggling file)
-The advantage of the hyperlink is that it does not appear in texts, and this is exactly what the attackers wanted to exploit
+The advantage of the hyperlink is that it does not appear in texts, and this is exactly what the attackers wanted to exploit.
 
 
 ![Screenshot from 2024-03-01 19-18-51](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/bb984b9c-5367-4fb2-9efc-3be7c098ec46)
@@ -37,7 +37,7 @@ The advantage of the hyperlink is that it does not appear in texts, and this is 
 
 HTML Smuggling used to obscure ISO file and the ISO contains a number of LNK files masquerading as images
 command line to make payload base64 to then put it in the HTML smuggling file:
-`base64 paylode.iso -w 0` and i added a picture of the BMW car along with the text content of the phishing message in the HTML file 
+`base64 payload.iso -w 0` and i added a picture of the BMW car along with the text content of the phishing message in the HTML file. 
 
 ![Screenshot from 2024-03-01 19-39-42](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/8e76572b-5d72-4d87-9cf9-4c7bf002c801)
 
@@ -45,14 +45,14 @@ command line to make payload base64 to then put it in the HTML smuggling file:
 ## The Second stage (implanting technique)
 
 We now need to create a PNG image that contains images of the BMW car, but in the background when the image is opened, the malware is running in the background,
-at this stage i used the WinRAR program to make the image open with Command Line execution via CMD when opening the image and I used an image in icon format
+at this stage i used the WinRAR program to make the image open with Command Line execution via CMD when opening the image and I used an image in icon format.
 
 
 ![20240302_194641](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/b3b7872e-1bf9-4637-a13f-ba720c113276)
 
-After using WinRaR for this compressed file, we will make a short cut of this file and put it in another file with the actual images then we will convert it to an ISO file through the PowerISO program
+After using WinRaR for this compressed file, we will make a short cut of this file and put it in another file with the actual images then we will convert it to an ISO file through the PowerISO program.
 
-Note: This iso file is the one to which we will make base64 for this iso file and put in the html smuggling file before make hyperlink and place it in the docx file
+Note: This iso file is the one to which we will make base64 for this iso file and put in the html smuggling file before make hyperlink and place it in the docx file.
 
 ![Screenshot from 2024-03-02 15-39-55](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/40fef200-416c-4de4-8999-f154a01b22dd)
 
@@ -60,7 +60,7 @@ Note: This iso file is the one to which we will make base64 for this iso file an
 
 ## The third stage (execution technique)
 
-Because i put the command line in the setup (run after extraction) menu in the Advanced SFX options for the WinRaR program now when the victim open the ISO file to see the high-quality images for the BMW car according to the phishing message he had previously received he will execute the payload with opening the actual image of the BMW car
+Because i put the command line in the setup (run after extraction) menu in the Advanced SFX options for the WinRaR program now when the victim open the ISO file to see the high-quality images for the BMW car according to the phishing message he had previously received he will execute the payload with opening the actual image of the BMW car.
 
 
 
