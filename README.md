@@ -111,5 +111,8 @@ this payload uses the Dropbox API to upload data, including command output to Dr
 
 ## Final result: payload connect to Dropbox C2 server
 
+the final step in this process involves the execution of the final payload. After being decrypted and loaded into the current process,
+the final payload is designed to beacon out to both Dropbox API-based  C2 server. 
+
 https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/c5b7b826-72a1-459e-9f19-6e34bd79aeab
 
