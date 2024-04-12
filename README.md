@@ -4,7 +4,9 @@ This is a simulation of attack by the Cozy Bear group (APT-29) targeting diploma
 The campaign began with an innocuous and legitimate event. In mid-April 2023, a diplomat within the Polish Ministry of Foreign Affairs emailed his legitimate flyer to various embassies advertising the sale of a used BMW 5-series sedan located in Kyiv. The file was titled BMW 5 for sale in Kyiv - 2023.docx.
 I relied on palo alto to figure out the details to make this simulation: https://unit42.paloaltonetworks.com/cloaked-ursa-phishing/
 
-![GIF_20240228_033834_929](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/6eca3483-961f-40b9-bd59-e2ab5d56f732)
+![photo_2024-04-12_01-35-08](https://github.com/S3N4T0R-0X0/APT29-Adversary-Simulation/assets/121706460/891d43ef-b749-4c08-ab60-df2df85e620d)
+
+
 
 1.DOCX file: created DOCX file includes a Hyperlink that leads to downloading further HTML (HTML smuggling file).
 
